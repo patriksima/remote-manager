@@ -1,0 +1,7 @@
+{
+    "require": {
+        "ifsnop/mysqldump-php": "2.*",
+        "guzzlehttp/guzzle": "~6.0",
+        "spomky-labs/otphp": "^7.0"
+    }
+}

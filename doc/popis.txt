@@ -1,0 +1,10 @@
+Popis
+
+1a. Klient si od serveru vyžádá veřejnou část asymetrického klíče. V požadavku je jednorázové heslo OTP.
+ b. Server ověří OTP a pokud je správné, vrátí veřejnou část klíče.
+2a. Klient pošle serveru tzv. pre-master klíč zašifrovaný veřejnou části asymetrického klíče serveru spolu s novým OTP.
+ b. Server svým privátním klíčem rozkryptuje pre-master klíč a ověří OTP. Je-li vše ok, vytvoří session klíč a vrátí klientovi jeho session-id
+ c. Klient si rovněž vytvoří z pre-master klíče session-key. Stejným algoritmem jako server, takže oba mají stejný session-key.
+3a. Klient pošle server příkaz, který je zašifrovaný pomocí session-key symetrickou šifrou vč. session-id
+ b. Server dle session-id se pokusí příkaz dešifrovat, pokud so to povede vrací nějaká data zpět klientovi opět zašifrovaná symetrickou šifrou založenou na session-key
+ c. Klient vrácená data dešifruje

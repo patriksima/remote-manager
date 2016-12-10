@@ -1,0 +1,8 @@
+<Files server.key>
+Order Allow,Deny
+Deny from all
+</Files>
+<Files server.pub>
+Order Allow,Deny
+Deny from all
+</Files>
