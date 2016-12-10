@@ -7,7 +7,16 @@ Zabezpečeno skrze OTP, asymetrickou a symetrickou šifrou.
 ## Instalace ##
 
 Buď jako modul Gitu.
+
+```
+git submodule add https://github.com/wrongware/remote-manager.git random5-10string
+git submodule update --init --recursive
+```
+
+nebo nahrejte přímo na FTP.
+
 Na server nahrejte jen nejnutnější soubory, ostatní smažte!
+
 Složku přejmenujte náhodně na 5-10 písmen.
 
 ## Server ##
